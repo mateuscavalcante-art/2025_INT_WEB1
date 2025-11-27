@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .login-card {
+            max-width: 900px;
+            border-radius: 10px;
+        }
+        .login-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px 0 0 8px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+
+        <div class="card shadow login-card p-0">
+            <div class="row g-0">                       
+                <!-- IMAGEM -->
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308"
+                         class="login-img" alt="Imagem de Login">
+                </div>
+
+                <!-- FORMULÁRIO -->
+                <div class="col-md-7 p-5">
+                    <h3 class="mb-4">Login</h3>
+
+                    <!-- Aqui está o segredo -->
+                    <form action="principal.html" method="get">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+
+                        <button class="btn btn-primary w-25">Entrar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Layout personalizado para lista de clientes */
+        .clients-header {
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:1rem;
+        }
+
+        .clients-title {
+            margin:0;
+            font-weight:700;
+            color:#0b3d91;
+        }
+
+        .client-list .client-item {
+            display:flex;
+            align-items:center;
+            gap:1rem;
+            padding: .75rem 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .client-avatar {
+            width:48px;
+            height:48px;
+            border-radius:50%;
+            background: linear-gradient(135deg,#89c2ff,#add8e6);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#fff;
+            font-weight:700;
+        }
+
+        .client-actions button { margin-left:.5rem; }
+    </style>
+</head>
+<body>
+<div class="container mt-4">
+    <div class="clients-header mb-3">
+        <h3 class="clients-title">Clientes cadastrados</h3>
+        <a href="cadastro-clientes.html" class="btn btn-primary">+ Novo Cliente</a>
+    </div>
+
+    <div class="card shadow client-list">
+        <div class="client-item">
+            <div class="client-avatar">AP</div>
+            <div class="flex-grow-1">
+                <div class="fw-semibold">Ana Paula</div>
+                <div class="text-muted small">(11) 98888-7777 — Rua das Flores, 123</div>
+            </div>
+            <div class="client-actions">
+                <button class="btn btn-outline-primary btn-sm">Ver</button>
+                <button class="btn btn-warning btn-sm">Editar</button>
+            </div>
+        </div>
+
+        <div class="client-item">
+            <div class="client-avatar">RL</div>
+            <div class="flex-grow-1">
+                <div class="fw-semibold">Ricardo Lima</div>
+                <div class="text-muted small">(21) 97777-6666 — Av. Central, 45</div>
+            </div>
+            <div class="client-actions">
+                <button class="btn btn-outline-primary btn-sm">Ver</button>
+                <button class="btn btn-warning btn-sm">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
